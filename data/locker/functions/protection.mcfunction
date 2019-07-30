@@ -1,3 +1,4 @@
+effect clear @s mining_fatigue
 scoreboard players add @s lock_protection 1
 
 execute positioned ^ ^ ^ if block ^ ^ ^ #locker:container if data block ^ ^ ^ Lock run effect give @s minecraft:mining_fatigue 1 255 true
