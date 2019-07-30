@@ -10,7 +10,7 @@
 	execute positioned ^ ^ ^ if block ^ ^ ^ #locker:container if data block ^ ^ ^ Lock run title @s actionbar {"text":"This container already has a lock!","color":"yellow"}
 	execute positioned ^ ^ ^ if block ^ ^ ^ #locker:container if data block ^ ^ ^ Lock run playsound minecraft:item.flintandsteel.use master @s
 
-	execute positioned ^ ^ ^ if block ^ ^ ^ #locker:container unless data block ^ ^ ^ Lock run summon minecraft:area_effect_cloud ^ ^ ^ {Duration:32767,Tags:["lock_memory","just_spawned"]}
+	execute positioned ^ ^ ^ if block ^ ^ ^ #locker:container unless data block ^ ^ ^ Lock run summon minecraft:armor_stand ^ ^ ^ {Marker:1,Small:1,Invisible:1,Tags:["lock_memory","just_spawned"]}
 	execute positioned ^ ^ ^ if block ^ ^ ^ #locker:container unless data block ^ ^ ^ Lock run data modify entity @e[tag=just_spawned,limit=1,sort=nearest] Tags append from entity @s SelectedItem.tag.pages[0]
 	tag @e[tag=just_spawned] remove just_spawned
 	
