@@ -9,6 +9,8 @@
         "minecraft:dispenser",
         "minecraft:dropper",
         "minecraft:barrel",
+        "minecraft:beacon",
+        "minecraft:brewing_stand",
         "#locker:shulker_boxes"   
     ]
 }
